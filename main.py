@@ -32,13 +32,13 @@ def special(char_name: str, char_class: str) -> str:
     """Apply a special skill."""
     if char_class == 'warrior':
         return (f'{char_name} '
-                f'применил специальное умение «Выносливость 105»')
+                f'применил специальное умение «Выносливость {80 + 25}»')
     if char_class == 'mage':
         return (f'{char_name} '
-                f'применил специальное умение «Атака 45»')
+                f'применил специальное умение «Атака {5 + 40}»')
     if char_class == 'healer':
         return (f'{char_name} '
-                f'применил специальное умение «Защита 40»')
+                f'применил специальное умение «Защита {10 + 30}»')
     return (f'{char_name} '
             f'не применил специальное умение')
 
